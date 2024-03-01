@@ -1,1 +1,1 @@
-SELECT * from Subject where grade > (SELECT AVG(grade) from Subject); SELECT s.* from Student s where id in (SELECT student_id from Payment )
+SELECT * from Subject where grade > (SELECT AVG(grade) from Subject); SELECT s.* from Student s where id in (SELECT student_id from Payment);
