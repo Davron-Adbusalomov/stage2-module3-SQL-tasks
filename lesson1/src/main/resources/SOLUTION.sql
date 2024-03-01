@@ -1,2 +1,1 @@
-
-
+CREATE TABLE Student (id bigint PRIMARY KEY, name varchar, birthday date, group int); CREATE TABLE Subject (id bigint PRIMARY KEY, name varchar, description varchar, grade int); CREATE TABLE PaymentType (id BIGINT PRIMARY KEY, name varchar); CREATE TABLE Payment(id BIGINT PRIMARY KEY, typeId bigint, amount decimal, student_id BIGINT,payment_date datetime, CONSTRAINT fk_paymentType FOREIGN KEY (typeId) REFERENCES PaymentType (id), CONSTRAINT fk_student FOREIGN KEY (student_id) REFERENCES Student(id)); CREATE TABLE Mark (id BIGINT PRIMARY KEY, student_id bigint, subject_id bigint,mark int, CONSTRAINT fk_student FOREIGN KEY (student_id) REFERENCES Student(id), CONSTRAINT fk_subject FOREIGN KEY (student_id) REFERENCES Subject(id));

@@ -1,0 +1,1 @@
+Select mark from Mark where mark>6 ORDER BY mark desc; SELECT amount from Payment where amount < 300 ORDER BY amount ASC; SELECT name from Payment_type ORDER BY name; SELECT * from Student ORDER BY name DESC; SELECT DISTINCT s.* from Student s INNER JOIN Payment p on s.id = p.student_id where p.amount>1000 ORDER BY s.birthday desc;

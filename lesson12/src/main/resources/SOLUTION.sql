@@ -1,0 +1,1 @@
+DELETE from Student where id in (SELECT student_id from Mark where mark>=4); DELETE from Student where id in (SELECT student_id from Mark where mark<4); DELETE from PaymentType where name = 'Daily'; DELETE from Mark where mark<7;
